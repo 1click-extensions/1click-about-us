@@ -1,0 +1,6 @@
+{
+  "browser_action": {"message": "Find about us" },
+  "ext_desc": {"message": "Find about us link in any site quickly" },
+  "ext_name": {"message": "1click Find About Us" }
+}
+
