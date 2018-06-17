@@ -1,7 +1,8 @@
 {
-  "browser_action": {"message": "עצור היסטוריה" },
-  "browser_action_off": {"message": "הפעל מחדש היבטוריה" },
-  "ext_desc": {"message": "עצור את רישום ההיסטוריה שלך בלחיצה אחת" },
-  "ext_name": {"message": "עצור היסטוריה בלחיצה אחת" }
+  "sent_thank_you": {"message": "המידע נשלח. תודה רבה!" },
+  "we_could_not_find_link": {"message": "לא מצאנו קישור. אם תמצא את הקישור, אנא לחץ עליו לחיצה כפולה כדי להודיע לנו לגביו" },
+  "browser_action": {"message": "מצא את 'אודותינו'" },
+  "ext_desc": {"message": "מצא את דף האודות של כל האתר בלחיצה אחת" },
+  "ext_name": {"message": "אודותינו בכל אתר בלחיצה אחת" }
 }
 
