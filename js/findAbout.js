@@ -1,6 +1,10 @@
-var abouts = {
+var aboutTexts = {
 		exac:["about","אודות","company"],
 		partially:["about us","about company","our company","our team"]
+	},
+	aboutLinks = {
+		exac:["/about","/company"],
+		partially:["about-us","about-company","our-company","our-team"]
 	},	
 	allLinks = document.getElementsByTagName('a'),
 	foundLink = false;
@@ -8,14 +12,25 @@ for(var i=0; i < allLinks.length; i++){
 	var link = allLinks[i],
 	text = link.innerText
 	text =text ? text.toLowerCase().trim().replace(/\t{0,}/,'') : '';
-	console.log(text);
-	var found = abouts.exac.indexOf(text) > -1;
+	//console.log(text);
+	var found = aboutTexts.exac.indexOf(text) > -1;
 	if(!found){
-		abouts.partially.forEach(function(tryText){
+		aboutTexts.partially.forEach(function(tryText){
 			if(text.indexOf(tryText)  > -1){
 				found = true;
 			}
 		});
+	}
+	if(!found){
+		let href = link.href.replace(location.origin,'');
+		found = aboutLinks.exac.indexOf(href) > -1;
+		if(!found){
+			aboutLinks.partially.forEach(function(tryText){
+				if(href.indexOf(tryText)  > -1){
+					found = true;
+				}
+			});
+		}
 	}
 	
 	if(found){

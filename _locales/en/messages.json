@@ -2,7 +2,7 @@
   "sent_thank_you": {"message": "The data sent. Thank you!" },
   "we_could_not_find_link": {"message": "We didn't find about link. If you want to help us, double click on link if you found it, to inform us which link of this site" },
   "browser_action": {"message": "Find about us" },
-  "ext_desc": {"message": "Find about us link in any site quickly" },
-  "ext_name": {"message": "1click Find About Us" }
+  "ext_desc": {"message": "Find about us link in any site by one click" },
+  "ext_name": {"message": "1click About Us" }
 }
 
